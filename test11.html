@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head> </head>
+<body>
+<form action="" method"">
+<label for="firstname">firstname:</label>
+<input type="text" id="firstname"><br><br>
+<label for="lastname">lastname:</label>
+<input type="text" id="lastname">
+<!--input element go in here-->
+</form>
+</body>
+</html>
+
+
+<html>
+<head>
+<title>Sample Web Form</title>
+</head>
+<body>
+<h1>Fill Out This Form</h1>
+<form action="/hello" method="POST">
+A Greeting: <input type="text" name="greet">
+<br/>
+Your Name: <input type="text" name="name">
+<br/>
+<input type="submit">
+</form>
+$def with (room)
+<h1> $room.name </h1>
+<pre>
+$room.description
+</pre>
+$if room.name == "death":
+<p><a href="/">Play Again?</a></p>
+$else:
+<p>
+<form action="/game" method="POST">
+- <input type="text" name="action"> <input type="SUBMIT">
+</form>
+</p>
+<h1>You Died!</h1>
+<p>Looks like you bit the dust.</p>
+<p><a href="/">Play Again</a></p>
+</body>
+</html>
+
